@@ -59,7 +59,7 @@ section p {
 
 }
 .first .big {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .second {
@@ -69,13 +69,18 @@ section p {
 }
 
 .first span,.second ul {
-  color:hsl(217, 14%, 63%) ;
+  color:hsl(207, 12%, 86%) ;
 }
 
 
 .second ul {
   list-style: none;
   margin-left: -38px;
+  
+}
+
+li {
+  padding: 5px;
 }
 
 button {
