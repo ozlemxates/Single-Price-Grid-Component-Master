@@ -93,10 +93,11 @@ button {
 body {
   display: block;
   margin: 40px;
+  margin-right: 40px;
   
 }
 main {
-  width: 480px;
+  width: 95%;
   height: 1100px;
   grid-template-columns: 1fr;
   grid-template-rows: 300px 400px 400px;
@@ -104,10 +105,6 @@ main {
   "section"
   "first" 
   "second";
-}
-
-section {
-  
 }
 
 }
