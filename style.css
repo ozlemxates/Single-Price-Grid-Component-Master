@@ -1,0 +1,119 @@
+body {
+  margin:100px;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+
+main {
+  width: 900px;
+  height: 700px;
+  border-radius: 15px;
+  overflow: hidden;
+  perspective: 1px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 400px;
+  grid-template-areas: 
+  "section section"
+  "first second" ;
+  
+}
+section, .first, .second {
+  padding:50px;
+}
+
+section {
+  grid-column: 1/span 2;
+  grid-area: section;
+  background-color: #ffff;
+  
+}
+section h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 30px;
+
+}
+section h2 {
+  color: hsl(71, 73%, 54%);
+  
+}
+section p {
+  font-weight: 700;
+  color: hsl(218, 22%, 67%);
+}
+
+.first h2, .first .big, .first p, .first button, .second h2 {
+  color: hsl(204, 43%, 93%);
+}
+
+
+
+.first {
+  grid-area: first;
+  background-color: hsl(179, 62%, 43%);
+
+}
+.first .big {
+  font-size: 30px;
+}
+
+.second {
+  grid-area: second;
+  background-color: hsl(179, 48%, 54%);
+}
+
+.first span,.second ul {
+  color:hsl(217, 14%, 63%) ;
+}
+
+
+.second ul {
+  list-style: none;
+  margin-left: -38px;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  width: 300px;
+  height: 65px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px;
+
+}
+
+@media(max-width:768px) {
+
+body {
+  display: block;
+  margin: 40px;
+  
+}
+main {
+  width: 480px;
+  height: 1100px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 400px 400px;
+  grid-template-areas: 
+  "section"
+  "first" 
+  "second";
+}
+
+section {
+  
+}
+
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
