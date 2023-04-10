@@ -94,24 +94,24 @@ button {
 
 body {
   display: block;
-  margin: 10px;
-  min-width: 735px;
+  margin: 15px;
+  min-width: 445px;
+  
+  
   
 }
 main {
-  width: 95%;
+  width: 90%;
   height: 1100px;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 400px 400px;
+  grid-template-rows: 300px 350px 400px;
   grid-template-areas: 
   "section"
   "first" 
   "second";
 }
 
-
 }
-
 
 
 
